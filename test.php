@@ -38,6 +38,14 @@ class Api
         return str_replace(array_keys($array), array_values($array), str_replace("%", "", $template));
 	}
 
+    /**
+     * Удаляет пробелы у значений массива
+     *
+     * @author      Vladislav
+     * @version     v.1.0 (dd/mm/yyyy)
+     * @param       array $array
+     * @return      array
+     */
 	private function getFilteredArray(array $array) : array
     {
         return array_combine(
