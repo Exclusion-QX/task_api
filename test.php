@@ -35,10 +35,10 @@ class Api
 	{
 	    $array = $this->getFilteredArray($array);
 
-        return str_replace(array_keys($array), array_values($array), str_replace("%", "", $template));
+	    return str_replace(array_keys($array), array_values($array), str_replace("%", "", $template));
 	}
 
-    /**
+	/**
      * Удаляет пробелы у значений массива
      *
      * @author      Vladislav
